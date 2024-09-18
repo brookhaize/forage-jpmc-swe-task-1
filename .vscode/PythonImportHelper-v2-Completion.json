@@ -1,0 +1,401 @@
+[
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "random",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "random",
+        "description": "random",
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "normalvariate",
+        "importPath": "random",
+        "description": "random",
+        "isExtraImport": true,
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "random",
+        "importPath": "random",
+        "description": "random",
+        "isExtraImport": true,
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "urllib.request",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "urllib.request",
+        "description": "urllib.request",
+        "detail": "urllib.request",
+        "documentation": {}
+    },
+    {
+        "label": "unittest",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "unittest",
+        "description": "unittest",
+        "detail": "unittest",
+        "documentation": {}
+    },
+    {
+        "label": "getDataPoint",
+        "importPath": "client3",
+        "description": "client3",
+        "isExtraImport": true,
+        "detail": "client3",
+        "documentation": {}
+    },
+    {
+        "label": "csv",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "csv",
+        "description": "csv",
+        "detail": "csv",
+        "documentation": {}
+    },
+    {
+        "label": "http.server",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "http.server",
+        "description": "http.server",
+        "detail": "http.server",
+        "documentation": {}
+    },
+    {
+        "label": "operator",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "operator",
+        "description": "operator",
+        "detail": "operator",
+        "documentation": {}
+    },
+    {
+        "label": "os.path",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os.path",
+        "description": "os.path",
+        "detail": "os.path",
+        "documentation": {}
+    },
+    {
+        "label": "re",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "re",
+        "description": "re",
+        "detail": "re",
+        "documentation": {}
+    },
+    {
+        "label": "threading",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "threading",
+        "description": "threading",
+        "detail": "threading",
+        "documentation": {}
+    },
+    {
+        "label": "timedelta",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "ThreadingMixIn",
+        "importPath": "socketserver",
+        "description": "socketserver",
+        "isExtraImport": true,
+        "detail": "socketserver",
+        "documentation": {}
+    },
+    {
+        "label": "dateutil.parser",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "dateutil.parser",
+        "description": "dateutil.parser",
+        "detail": "dateutil.parser",
+        "documentation": {}
+    },
+    {
+        "label": "getDataPoint",
+        "kind": 2,
+        "importPath": "client3",
+        "description": "client3",
+        "peekOfCode": "def getDataPoint(quote):\n    \"\"\" Produce all the needed values to generate a datapoint \"\"\"\n    \"\"\" ------------- Update this function ------------- \"\"\"\n    stock = quote['stock']\n    bid_price = float(quote['top_bid']['price'])\n    ask_price = float(quote['top_ask']['price'])\n    (bid_price+ask_price) / 2.\n    return stock, bid_price, ask_price, price\ndef getRatio(price_a, price_b):\n    \"\"\" Get ratio of price_a and price_b \"\"\"",
+        "detail": "client3",
+        "documentation": {}
+    },
+    {
+        "label": "getRatio",
+        "kind": 2,
+        "importPath": "client3",
+        "description": "client3",
+        "peekOfCode": "def getRatio(price_a, price_b):\n    \"\"\" Get ratio of price_a and price_b \"\"\"\n    \"\"\" ------------- Update this function ------------- \"\"\"\n    if (price_a == 0):\n      return\n    return price_a/price_b\n# Main\nif __name__ == \"__main__\":\n    # Query the price once every N seconds.\n    for _ in iter(range(N)):",
+        "detail": "client3",
+        "documentation": {}
+    },
+    {
+        "label": "QUERY",
+        "kind": 5,
+        "importPath": "client3",
+        "description": "client3",
+        "peekOfCode": "QUERY = \"http://localhost:8080/query?id={}\"\n# 500 server request\nN = 500\ndef getDataPoint(quote):\n    \"\"\" Produce all the needed values to generate a datapoint \"\"\"\n    \"\"\" ------------- Update this function ------------- \"\"\"\n    stock = quote['stock']\n    bid_price = float(quote['top_bid']['price'])\n    ask_price = float(quote['top_ask']['price'])\n    (bid_price+ask_price) / 2.",
+        "detail": "client3",
+        "documentation": {}
+    },
+    {
+        "label": "N",
+        "kind": 5,
+        "importPath": "client3",
+        "description": "client3",
+        "peekOfCode": "N = 500\ndef getDataPoint(quote):\n    \"\"\" Produce all the needed values to generate a datapoint \"\"\"\n    \"\"\" ------------- Update this function ------------- \"\"\"\n    stock = quote['stock']\n    bid_price = float(quote['top_bid']['price'])\n    ask_price = float(quote['top_ask']['price'])\n    (bid_price+ask_price) / 2.\n    return stock, bid_price, ask_price, price\ndef getRatio(price_a, price_b):",
+        "detail": "client3",
+        "documentation": {}
+    },
+    {
+        "label": "ClientTest",
+        "kind": 6,
+        "importPath": "client_test",
+        "description": "client_test",
+        "peekOfCode": "class ClientTest(unittest.TestCase):\n  def test_getDataPoint_calculatePrice(self):\n    quotes = [\n      {'top_ask': {'price': 121.2, 'size': 36}, 'timestamp': '2019-02-11 22:06:30.572453', 'top_bid': {'price': 120.48, 'size': 109}, 'id': '0.109974697771', 'stock': 'ABC'},\n      {'top_ask': {'price': 121.68, 'size': 4}, 'timestamp': '2019-02-11 22:06:30.572453', 'top_bid': {'price': 117.87, 'size': 81}, 'id': '0.109974697771', 'stock': 'DEF'}\n    ]\n    \"\"\" ------------ Add the assertion below ------------ \"\"\"\n  def test_getDataPoint_calculatePriceBidGreaterThanAsk(self):\n    quotes = [\n      {'top_ask': {'price': 119.2, 'size': 36}, 'timestamp': '2019-02-11 22:06:30.572453', 'top_bid': {'price': 120.48, 'size': 109}, 'id': '0.109974697771', 'stock': 'ABC'},",
+        "detail": "client_test",
+        "documentation": {}
+    },
+    {
+        "label": "ThreadedHTTPServer",
+        "kind": 6,
+        "importPath": "server3",
+        "description": "server3",
+        "peekOfCode": "class ThreadedHTTPServer(ThreadingMixIn, http.server.HTTPServer):\n    \"\"\" Boilerplate class for a multithreaded HTTP Server, with working\n        shutdown.\n    \"\"\"\n    allow_reuse_address = True\n    def shutdown(self):\n        \"\"\" Override MRO to shutdown properly. \"\"\"\n        self.socket.close()\n        http.server.HTTPServer.shutdown(self)\ndef route(path):",
+        "detail": "server3",
+        "documentation": {}
+    },
+    {
+        "label": "App",
+        "kind": 6,
+        "importPath": "server3",
+        "description": "server3",
+        "peekOfCode": "class App(object):\n    \"\"\" The trading game server application. \"\"\"\n    def __init__(self):\n        self._book_1 = dict()\n        self._book_2 = dict()\n        self._data_1 = order_book(read_csv(), self._book_1, 'ABC')\n        self._data_2 = order_book(read_csv(), self._book_2, 'DEF')\n        self._rt_start = datetime.now()\n        self._sim_start, _, _ = next(self._data_1)\n        self.read_10_first_lines()",
+        "detail": "server3",
+        "documentation": {}
+    },
+    {
+        "label": "bwalk",
+        "kind": 2,
+        "importPath": "server3",
+        "description": "server3",
+        "peekOfCode": "def bwalk(min, max, std):\n    \"\"\" Generates a bounded random walk. \"\"\"\n    rng = max - min\n    while True:\n        max += normalvariate(0, std)\n        yield abs((max % (rng * 2)) - rng) + min\ndef market(t0=MARKET_OPEN):\n    \"\"\" Generates a random series of market conditions,\n        (time, price, spread).\n    \"\"\"",
+        "detail": "server3",
+        "documentation": {}
+    },
+    {
+        "label": "market",
+        "kind": 2,
+        "importPath": "server3",
+        "description": "server3",
+        "peekOfCode": "def market(t0=MARKET_OPEN):\n    \"\"\" Generates a random series of market conditions,\n        (time, price, spread).\n    \"\"\"\n    for hours, px, spd in zip(bwalk(*FREQ), bwalk(*PX), bwalk(*SPD)):\n        yield t0, px, spd\n        t0 += timedelta(hours=abs(hours))\ndef orders(hist):\n    \"\"\" Generates a random set of limit orders (time, side, price, size) from\n        a series of market conditions.",
+        "detail": "server3",
+        "documentation": {}
+    },
+    {
+        "label": "orders",
+        "kind": 2,
+        "importPath": "server3",
+        "description": "server3",
+        "peekOfCode": "def orders(hist):\n    \"\"\" Generates a random set of limit orders (time, side, price, size) from\n        a series of market conditions.\n    \"\"\"\n    for t, px, spd in hist:\n        stock = 'ABC' if random() > 0.5 else 'DEF'\n        side, d = ('sell', 2) if random() > 0.5 else ('buy', -2)\n        order = round(normalvariate(px + (spd / d), spd / OVERLAP), 2)\n        size = int(abs(normalvariate(0, 100)))\n        yield t, stock, side, order, size",
+        "detail": "server3",
+        "documentation": {}
+    },
+    {
+        "label": "add_book",
+        "kind": 2,
+        "importPath": "server3",
+        "description": "server3",
+        "peekOfCode": "def add_book(book, order, size, _age=10):\n    \"\"\" Add a new order and size to a book, and age the rest of the book. \"\"\"\n    yield order, size, _age\n    for o, s, age in book:\n        if age > 0:\n            yield o, s, age - 1\ndef clear_order(order, size, book, op=operator.ge, _notional=0):\n    \"\"\" Try to clear a sized order against a book, returning a tuple of\n        (notional, new_book) if successful, and None if not.  _notional is a\n        recursive accumulator and should not be provided by the caller.",
+        "detail": "server3",
+        "documentation": {}
+    },
+    {
+        "label": "clear_order",
+        "kind": 2,
+        "importPath": "server3",
+        "description": "server3",
+        "peekOfCode": "def clear_order(order, size, book, op=operator.ge, _notional=0):\n    \"\"\" Try to clear a sized order against a book, returning a tuple of\n        (notional, new_book) if successful, and None if not.  _notional is a\n        recursive accumulator and should not be provided by the caller.\n    \"\"\"\n    (top_order, top_size, age), tail = book[0], book[1:]\n    if op(order, top_order):\n        _notional += min(size, top_size) * top_order\n        sdiff = top_size - size\n        if sdiff > 0:",
+        "detail": "server3",
+        "documentation": {}
+    },
+    {
+        "label": "clear_book",
+        "kind": 2,
+        "importPath": "server3",
+        "description": "server3",
+        "peekOfCode": "def clear_book(buy=None, sell=None):\n    \"\"\" Clears all crossed orders from a buy and sell book, returning the new\n        books uncrossed.\n    \"\"\"\n    while buy and sell:\n        order, size, _ = buy[0]\n        new_book = clear_order(order, size, sell)\n        if new_book:\n            sell = new_book[1]\n            buy = buy[1:]",
+        "detail": "server3",
+        "documentation": {}
+    },
+    {
+        "label": "order_book",
+        "kind": 2,
+        "importPath": "server3",
+        "description": "server3",
+        "peekOfCode": "def order_book(orders, book, stock_name):\n    \"\"\" Generates a series of order books from a series of orders.  Order books\n        are mutable lists, and mutating them during generation will affect the\n        next turn!\n    \"\"\"\n    for t, stock, side, order, size in orders:\n        if stock_name == stock:\n            new = add_book(book.get(side, []), order, size)\n            book[side] = sorted(new, reverse=side == 'buy', key=lambda x: x[0])\n        bids, asks = clear_book(**book)",
+        "detail": "server3",
+        "documentation": {}
+    },
+    {
+        "label": "generate_csv",
+        "kind": 2,
+        "importPath": "server3",
+        "description": "server3",
+        "peekOfCode": "def generate_csv():\n    \"\"\" Generate a CSV of order history. \"\"\"\n    with open('test.csv', 'wb') as f:\n        writer = csv.writer(f)\n        for t, stock, side, order, size in orders(market()):\n            if t > MARKET_OPEN + SIM_LENGTH:\n                break\n            writer.writerow([t, stock, side, order, size])\ndef read_csv():\n    \"\"\" Read a CSV or order history into a list. \"\"\"",
+        "detail": "server3",
+        "documentation": {}
+    },
+    {
+        "label": "read_csv",
+        "kind": 2,
+        "importPath": "server3",
+        "description": "server3",
+        "peekOfCode": "def read_csv():\n    \"\"\" Read a CSV or order history into a list. \"\"\"\n    with open('test.csv', 'rt') as f:\n        for time, stock, side, order, size in csv.reader(f):\n            yield dateutil.parser.parse(time), stock, side, float(order), int(size)\n################################################################################\n#\n# Server\nclass ThreadedHTTPServer(ThreadingMixIn, http.server.HTTPServer):\n    \"\"\" Boilerplate class for a multithreaded HTTP Server, with working",
+        "detail": "server3",
+        "documentation": {}
+    },
+    {
+        "label": "route",
+        "kind": 2,
+        "importPath": "server3",
+        "description": "server3",
+        "peekOfCode": "def route(path):\n    \"\"\" Decorator for a simple bottle-like web framework.  Routes path to the\n        decorated method, with the rest of the path as an argument.\n    \"\"\"\n    def _route(f):\n        setattr(f, '__route__', path)\n        return f\n    return _route\ndef read_params(path):\n    \"\"\" Read query parameters into a dictionary if they are parseable,",
+        "detail": "server3",
+        "documentation": {}
+    },
+    {
+        "label": "read_params",
+        "kind": 2,
+        "importPath": "server3",
+        "description": "server3",
+        "peekOfCode": "def read_params(path):\n    \"\"\" Read query parameters into a dictionary if they are parseable,\n        otherwise returns None.\n    \"\"\"\n    query = path.split('?')\n    if len(query) > 1:\n        query = query[1].split('&')\n        return dict(map(lambda x: x.split('='), query))\ndef get(req_handler, routes):\n    \"\"\" Map a request to the appropriate route of a routes instance. \"\"\"",
+        "detail": "server3",
+        "documentation": {}
+    },
+    {
+        "label": "get",
+        "kind": 2,
+        "importPath": "server3",
+        "description": "server3",
+        "peekOfCode": "def get(req_handler, routes):\n    \"\"\" Map a request to the appropriate route of a routes instance. \"\"\"\n    for name, handler in routes.__class__.__dict__.items():\n        if hasattr(handler, \"__route__\"):\n            if None != re.search(handler.__route__, req_handler.path):\n                req_handler.send_response(200)\n                req_handler.send_header('Content-Type', 'application/json')\n                req_handler.send_header('Access-Control-Allow-Origin', '*')\n                req_handler.end_headers()\n                params = read_params(req_handler.path)",
+        "detail": "server3",
+        "documentation": {}
+    },
+    {
+        "label": "run",
+        "kind": 2,
+        "importPath": "server3",
+        "description": "server3",
+        "peekOfCode": "def run(routes, host='0.0.0.0', port=8080):\n    \"\"\" Runs a class as a server whose methods have been decorated with\n        @route.\n    \"\"\"\n    class RequestHandler(http.server.BaseHTTPRequestHandler):\n        def log_message(self, *args, **kwargs):\n            pass\n        def do_GET(self):\n            get(self, routes)\n    server = ThreadedHTTPServer((host, port), RequestHandler)",
+        "detail": "server3",
+        "documentation": {}
+    },
+    {
+        "label": "REALTIME",
+        "kind": 5,
+        "importPath": "server3",
+        "description": "server3",
+        "peekOfCode": "REALTIME = True\nSIM_LENGTH = timedelta(days=365 * 5)\nMARKET_OPEN = datetime.today().replace(hour=0, minute=30, second=0)\n# Market parms\n#       min  / max  / std\nSPD = (2.0, 6.0, 0.1)\nPX = (60.0, 150.0, 1)\nFREQ = (12, 36, 50)\n# Trades\nOVERLAP = 4",
+        "detail": "server3",
+        "documentation": {}
+    },
+    {
+        "label": "SIM_LENGTH",
+        "kind": 5,
+        "importPath": "server3",
+        "description": "server3",
+        "peekOfCode": "SIM_LENGTH = timedelta(days=365 * 5)\nMARKET_OPEN = datetime.today().replace(hour=0, minute=30, second=0)\n# Market parms\n#       min  / max  / std\nSPD = (2.0, 6.0, 0.1)\nPX = (60.0, 150.0, 1)\nFREQ = (12, 36, 50)\n# Trades\nOVERLAP = 4\n################################################################################",
+        "detail": "server3",
+        "documentation": {}
+    },
+    {
+        "label": "MARKET_OPEN",
+        "kind": 5,
+        "importPath": "server3",
+        "description": "server3",
+        "peekOfCode": "MARKET_OPEN = datetime.today().replace(hour=0, minute=30, second=0)\n# Market parms\n#       min  / max  / std\nSPD = (2.0, 6.0, 0.1)\nPX = (60.0, 150.0, 1)\nFREQ = (12, 36, 50)\n# Trades\nOVERLAP = 4\n################################################################################\n#",
+        "detail": "server3",
+        "documentation": {}
+    },
+    {
+        "label": "SPD",
+        "kind": 5,
+        "importPath": "server3",
+        "description": "server3",
+        "peekOfCode": "SPD = (2.0, 6.0, 0.1)\nPX = (60.0, 150.0, 1)\nFREQ = (12, 36, 50)\n# Trades\nOVERLAP = 4\n################################################################################\n#\n# Test Data\ndef bwalk(min, max, std):\n    \"\"\" Generates a bounded random walk. \"\"\"",
+        "detail": "server3",
+        "documentation": {}
+    },
+    {
+        "label": "PX",
+        "kind": 5,
+        "importPath": "server3",
+        "description": "server3",
+        "peekOfCode": "PX = (60.0, 150.0, 1)\nFREQ = (12, 36, 50)\n# Trades\nOVERLAP = 4\n################################################################################\n#\n# Test Data\ndef bwalk(min, max, std):\n    \"\"\" Generates a bounded random walk. \"\"\"\n    rng = max - min",
+        "detail": "server3",
+        "documentation": {}
+    },
+    {
+        "label": "FREQ",
+        "kind": 5,
+        "importPath": "server3",
+        "description": "server3",
+        "peekOfCode": "FREQ = (12, 36, 50)\n# Trades\nOVERLAP = 4\n################################################################################\n#\n# Test Data\ndef bwalk(min, max, std):\n    \"\"\" Generates a bounded random walk. \"\"\"\n    rng = max - min\n    while True:",
+        "detail": "server3",
+        "documentation": {}
+    },
+    {
+        "label": "OVERLAP",
+        "kind": 5,
+        "importPath": "server3",
+        "description": "server3",
+        "peekOfCode": "OVERLAP = 4\n################################################################################\n#\n# Test Data\ndef bwalk(min, max, std):\n    \"\"\" Generates a bounded random walk. \"\"\"\n    rng = max - min\n    while True:\n        max += normalvariate(0, std)\n        yield abs((max % (rng * 2)) - rng) + min",
+        "detail": "server3",
+        "documentation": {}
+    },
+    {
+        "label": "ops",
+        "kind": 5,
+        "importPath": "server3",
+        "description": "server3",
+        "peekOfCode": "ops = {\n    'buy': operator.le,\n    'sell': operator.ge,\n}\nclass App(object):\n    \"\"\" The trading game server application. \"\"\"\n    def __init__(self):\n        self._book_1 = dict()\n        self._book_2 = dict()\n        self._data_1 = order_book(read_csv(), self._book_1, 'ABC')",
+        "detail": "server3",
+        "documentation": {}
+    }
+]
